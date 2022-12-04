@@ -1,0 +1,149 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  .header{
+    display:flex;
+    justify-content: flex-start;
+
+  }
+
+  .nav .item {
+    list-style-type:none;
+    
+  }
+  a {
+    text-decoration: none;
+  }
+
+.nav{
+    display:flex;
+
+  }
+
+ul li{
+    padding:10px 10px;
+}
+
+
+
+
+
+/*-------------------carousel--------------------*/
+ 
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+ 
+  width: auto;
+  padding: 16px;
+
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color:black;
+  margin-top:48px;
+  margin-right:800px;
+  margin-left:-434px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+
+/* The dots/bullets/indicators */
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+.mySlides fade{
+  display:flex;
+}
+
+.show{
+  display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: center;
+    padding:0px 10px;
+}
+.sageti{
+
+  margin:100px;
+ 
+}
+.grid-container{
+  display:flex;
+  justify-content: center;
+  align-items: space-around;
+}
+
+
+@media only screen and (max-width: 400px){
+  .header .nav{
+    display:none;
+  }
+  .slideshow-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+  }
+  .mySlides img{
+    width:200px;
+    height:200px;
+  }
+  .mySlides{
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-container{
+    display: flex;
+    flex-direction: column;
+  }
+ 
+}
